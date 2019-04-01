@@ -19,6 +19,9 @@ $(function () {
                 Mobile = true
             }
 
+
+
+
             var html = template('bannerTemp', {
                 'list': result,
                 Mobile: Mobile
