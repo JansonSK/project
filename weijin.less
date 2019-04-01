@@ -1,0 +1,351 @@
+.header {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px #ccc solid;
+  font-size: 13px;
+
+}
+
+.header a {
+  text-decoration: none;
+  color: #666;
+}
+
+
+.header .row .cod img {
+  display: none;
+  position: absolute;
+  border: 1px solid #ccc;
+  border-top: none;
+  left: 50%;
+  top: 49px;
+  transform: translateX(-50%);
+}
+
+.header .row :hover img {
+  display: block;
+  z-index: 998;
+}
+
+.header .row {
+  text-align: center;
+
+}
+
+.header .row>div:nth-last-of-type(-n+3) {
+  border-left: 1px solid #ccc;
+}
+
+.header .row>div:nth-last-of-type(1) .btn-danger {
+  padding: 3px 15px;
+}
+
+.header .row>div:nth-last-of-type(1) .btn-link {
+  color: #666;
+  text-decoration: none;
+}
+
+//导航条
+
+.wjs_nav .navbar-brand {
+  height: 80px;
+  line-height: 50px;
+  font-size: 60px;
+
+  >span:nth-of-type(1) {
+    color: red
+  }
+
+  >span:nth-of-type(2) {
+    color: #000;
+  }
+
+
+}
+
+//logo
+
+
+.wjs_nav .navbar-toggle {
+  margin-top: 23px;
+}
+
+.wjs_nav .navbar-nav>li {
+  height: 80px;
+}
+
+.wjs_nav .navbar-nav>li>a {
+  line-height: 50px;
+  font-size: 15px;
+}
+
+.wjs_nav .navbar-nav>li>a:hover,
+.wjs_nav .navbar-nav>li a:focus {
+  border-bottom: 3px solid red;
+  color: #777;
+}
+
+.wjs_nav .navbar-nav>.active>a,
+.wjs_nav .navbar-nav>.active a:hover,
+.wjs_nav .navbar-nav>.active a:focus {
+  background-color: transparent;
+  border-bottom: 3px solid red;
+}
+
+//轮播图
+.pcImg {
+  width: 100%;
+  height: 380px;
+  display: block;
+  background-size: cover;
+  background-position: center;
+}
+
+.mobileImg {
+  width: 100%;
+  display: block;
+
+  >img {
+    width: 100%;
+    display: block;
+  }
+}
+
+// 用户服务
+
+.service {
+  padding: 30px 0;
+
+  .row {
+    .wjs_icon {
+      font-size: 30px;
+    }
+
+    a {
+      color: #333;
+      text-decoration: none;
+
+      >.media-left {
+        vertical-align: middle;
+      }
+    }
+
+    a:hover {
+      color: red;
+    }
+
+  }
+
+}
+
+// 预约板块
+.order {
+  height: 60px;
+  border-top: 1px #ccc solid;
+  border-bottom: 1px #ccc solid;
+
+  line-height: 60px;
+  box-sizing: border-box;
+
+  a {
+    color: #333;
+
+    &:hover {
+      color: red;
+    }
+  }
+
+  .datenow {
+    color: red;
+    border-bottom: 1px dashed red;
+  }
+}
+
+// 产品板块
+
+.product {
+  background-color: #eee;
+  border: 20px 0;
+  clear: both;
+
+  .parent {
+    overflow: hidden;
+
+    .nav-tabs {
+      width: 1140px;
+
+      >li {
+        height: 80px;
+        padding: 0 15px;
+
+        >a {
+          line-height: 58px;
+          border: none;
+          color: #555;
+          font-size: 16px;
+        }
+
+        &.active {
+
+          >a,
+          a:hover,
+          a:focus {
+            border: none;
+            background-color: #eee;
+            border-bottom: 3px solid red;
+          }
+        }
+
+        >a:hover {
+          background-color: transparent;
+          border-bottom: 3px solid red;
+        }
+      }
+    }
+  }
+
+  //  特别推荐
+  .proBox {
+    height: 150px;
+    display: flex;
+    margin-top: 15px;
+    box-shadow: 1px 1px 1px 2px rgb(192, 192, 192);
+
+    >.left {
+      flex: 1;
+      background-color: #fff;
+
+      h4 {
+        text-align: center;
+        font-size: 16px;
+      }
+
+      .shareBox {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 8px;
+
+        >div {
+          width: 50%;
+
+        }
+
+        >div:nth-of-type(even) {
+          text-align: right;
+
+        }
+      }
+    }
+    >.right{
+            width: 100px;
+            background-color: #fff;
+            border-left: 1px dashed #ccc;
+            position: relative;
+            text-align: center;
+            padding-top: 20px;
+            &::before{
+                content: '';
+                width: 14px;
+                height: 14px;
+                border-radius: 50%;
+                background-color: #eee;
+                position: absolute;
+                top: -7px;
+                left: -7px;
+                box-shadow: 0px -1px 2px #ccc inset;
+            }
+            &::after{
+                content: '';
+                width: 14px;
+                height: 14px;
+                border-radius: 50%;
+                background-color: #eee;
+                position: absolute;
+                bottom: -7px;
+                left: -7px;
+                box-shadow: 0px 1px 2px #ccc inset;
+            }           
+            > span{
+                font-size: 40px;
+                color:red;
+                font-weight: bold;
+            }
+            > sub {
+                font-size: 13px;
+                bottom:0;
+                color:red;
+            }
+            .wjs_tip{
+                width: 100%;
+                position: absolute;
+                left: 50%;
+                top: 10px;
+                transform: translateX(-50%);
+                > span:nth-of-type(1) {
+                    border:1px red solid;
+                    color:red;
+                    cursor: pointer;
+                }
+                > span:nth-of-type(2) {
+                    border:1px blue solid;
+                    color:blue;
+                    cursor: pointer;
+                }
+            }
+        }
+        &.active{
+            color:#fff;
+            > .left{
+                background-color: #f00;
+                position: relative;
+                &::before{
+                    content: "\e915";
+                    font-family: wjs;
+                    font-size: 30px;
+                    position: absolute;
+                    left: 0;
+                    top: -6px;
+                }
+            }
+            > .right{
+                background-color: #f00;
+                > span,sub{
+                    color:#fff;
+                }
+            }
+        }
+    }
+
+
+  
+
+}
+
+// 合作伙伴
+
+.partener{
+  width:100%;
+    padding: 30px;
+
+    display:flex;
+    flex-flow: row wrap;
+    > h3 {
+        line-height: 50px;
+        text-align: center;
+    }
+    > ul{
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        > li {
+            margin: 0 20px;
+            > a {
+                color: #666;
+                text-decoration: none;
+            }
+        }
+        .wjs_icon{
+            font-size: 80px;
+        }
+    }
+}
